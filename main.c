@@ -25,7 +25,8 @@ int main(int argc, char **argv){
     }
 
     //Convert ascii to integer
-    int n = atoi(argv[1]);
+    //n = how many numbers to check up to
+    unsigned long long n = atoi(argv[1]);
 
     //If an integer isn't given or its <= 0 
     if (n <= 0){
@@ -33,7 +34,23 @@ int main(int argc, char **argv){
         exit(EXIT_FAILURE);
     }
 
-    printf("%d\n", n);
+    //n_p = range of values processor p will check
+    //i_start = integer that processor p will start checking at
+    unsigned long long n_p = floor(n/p);
+    if(rank < n %p) n_p += 1; 
+    unsigned long long i_start = rank*floor(n/p)+ fmin(rank, n%p) + 1; 
+
+    printf("rank: %d, n_p: %llu, i_start: %llu\n", rank, n_p, i_start); 
+
+   
+    unsigned long long lgap = 0;               //largest gap
+    unsigned long long prev_prime = NULL;     
+    int first_prime = NULL;
+    int last_prime = NULL;
+    /*main loop*/
+    for(unsigned long long x = i_start; x < i_start + n_p; x++){
+        
+    }
 
     MPI_Finalize(); 
 }
