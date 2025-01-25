@@ -40,17 +40,61 @@ int main(int argc, char **argv){
     if(rank < n %p) n_p += 1; 
     unsigned long long i_start = rank*floor(n/p)+ fmin(rank, n%p) + 1; 
 
-    printf("rank: %d, n_p: %llu, i_start: %llu\n", rank, n_p, i_start); 
+    unsigned long long lgap = 0;            //largest gap
+    unsigned long long p_1 = 0;             //primes giving largest gap
+    unsigned long long p_2 = 0; 
+    unsigned long long prev_prime = 0;      //previous gap
+    int first_prime = 0;                    //p_i's first prime (for gaps between procs)
+    int last_prime = 0;                     //p_i's last prime  (for gaps between procs)
 
-   
-    unsigned long long lgap = 0;               //largest gap
-    unsigned long long prev_prime = NULL;     
-    int first_prime = NULL;
-    int last_prime = NULL;
-    /*main loop*/
+    /*main loop for each proc*/
     for(unsigned long long x = i_start; x < i_start + n_p; x++){
-        
+        unsigned long long gap; 
+
+        //Set it to a gmp type
+        mpz_t mpz_val;
+        mpz_init(mpz_val);
+        mpz_set_ui(mpz_val, x); 
+
+        //check if prime
+        int prime = mpz_probab_prime_p(mpz_val, 15); 
+
+        if(prime){
+            last_prime = x;
+
+            if(prev_prime){
+                gap = x - prev_prime;
+
+                //update procs largest gap
+                if(gap > lgap){
+                    lgap = gap;
+                    p_1 = prev_prime;
+                    p_2 = x; 
+                }
+            }
+
+            //if first prime
+            else{
+                prev_prime = x;
+                //if not first proc
+                if(rank > 1){
+                    first_prime = x; 
+                }
+            }
+        }
+
     }
+
+    MPI_Barrier(MPI_COMM_WORLD); 
+
+    /*Prime gaps between procs intervals*/
+    /*All procs send first prime to previous proc*/
+    if(rank > 1){
+        MPI_send()
+    }
+
+    if(rank < p){}
+
 
     MPI_Finalize(); 
 }
