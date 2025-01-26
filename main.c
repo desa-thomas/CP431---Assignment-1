@@ -44,8 +44,8 @@ int main(int argc, char **argv){
     unsigned long long p_1 = 0;             //primes giving largest gap
     unsigned long long p_2 = 0; 
     unsigned long long prev_prime = 0;      //previous gap
-    int first_prime = 0;                    //p_i's first prime (for gaps between procs)
-    int last_prime = 0;                     //p_i's last prime  (for gaps between procs)
+    unsigned long long first_prime = 0;     //p_i's first prime (for gaps between procs)
+    unsigned long long last_prime = 0;      //p_i's last prime  (for gaps between procs)
 
     /*main loop for each proc*/
     for(unsigned long long x = i_start; x < i_start + n_p; x++){
@@ -71,13 +71,14 @@ int main(int argc, char **argv){
                     p_1 = prev_prime;
                     p_2 = x; 
                 }
+                prev_prime = x; 
             }
 
             //if first prime
             else{
                 prev_prime = x;
                 //if not first proc
-                if(rank > 1){
+                if(rank > 0){
                     first_prime = x; 
                 }
             }
@@ -89,12 +90,38 @@ int main(int argc, char **argv){
 
     /*Prime gaps between procs intervals*/
     /*All procs send first prime to previous proc*/
-    if(rank > 1){
-        MPI_send()
+
+    if(rank > 0){
+        MPI_Send(&first_prime, 1, MPI_UNSIGNED_LONG_LONG, rank-1, 0, MPI_COMM_WORLD); 
+        
     }
 
-    if(rank < p){}
+    if(rank < p-1 && p > 1){
+        unsigned long long next_proc_fp; 
+        MPI_Recv(&next_proc_fp, 1, MPI_UNSIGNED_LONG_LONG, rank+1, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE); 
 
+        unsigned long long inter_proc_gap = next_proc_fp - last_prime;
+
+        //If the inter processor gap is greater than the largest gap in the interval -> update it
+        if (inter_proc_gap > lgap){
+            lgap = inter_proc_gap; 
+            p_1 = last_prime; 
+            p_2 = next_proc_fp; 
+        }
+    }
+
+
+    MPI_Barrier(MPI_COMM_WORLD); 
+
+    unsigned long long largest_gap;
+    MPI_Allreduce(&lgap, &largest_gap, 1, MPI_UNSIGNED_LONG_LONG, MPI_MAX, MPI_COMM_WORLD);
+
+    MPI_Barrier(MPI_COMM_WORLD); 
+
+    //Proc with largest gap
+    if(lgap == largest_gap){
+        printf("%d: Largest Prime gap: %llu\np_1: %llu\np_2: %llu\n", rank, largest_gap, p_1, p_2); 
+    }
 
     MPI_Finalize(); 
 }
