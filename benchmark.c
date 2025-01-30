@@ -1,7 +1,7 @@
 #include <math.h> 
 #include <gmp.h>
 #include <stdio.h> 
-#include <mpi.h>
+#include <mpi.h> 
 #include <stdlib.h>
 #include <sys/resource.h>
 #define MAX_PROCESSORS 100 
@@ -46,7 +46,7 @@ void finalize_benchmark_stats(int rank, int p) {
         avg_cpu_usage /= p;
         avg_memory_usage /= p;
 
-        FILE *file = fopen("./output/benchmark.txt", "a");
+        FILE *file = fopen("./benchmark.txt", "a");
         if (file == NULL) {
             perror("Unable to open benchmark.txt");
             return;

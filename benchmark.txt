@@ -1,0 +1,540 @@
+1 Processor Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 29.704200
+        CPU Usage: 25.292199
+        Memory Usage: 3140036 KB
+    Overall Average:
+        Execution Time: 29.704200
+        CPU Usage: 25.292199
+        Memory Usage: 3140036.000000 KB
+1 Processor Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 61.662313
+        CPU Usage: 52.888347
+        Memory Usage: 6265140 KB
+    Overall Average:
+        Execution Time: 61.662313
+        CPU Usage: 52.888347
+        Memory Usage: 6265140.000000 KB
+2 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 10.309142
+        CPU Usage: 9.207238
+        Memory Usage: 1577564 KB
+    Processor 2:
+        Execution Time: 10.309400
+        CPU Usage: 9.426644
+        Memory Usage: 1577592 KB
+    Overall Average:
+        Execution Time: 10.309271
+        CPU Usage: 9.316941
+        Memory Usage: 1577578.000000 KB
+2 Processors Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 23.238909
+        CPU Usage: 20.404533
+        Memory Usage: 3140092 KB
+    Processor 2:
+        Execution Time: 23.238993
+        CPU Usage: 20.253179
+        Memory Usage: 3140156 KB
+    Overall Average:
+        Execution Time: 23.238951
+        CPU Usage: 20.328856
+        Memory Usage: 3140124.000000 KB
+3 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 8.935377
+        CPU Usage: 7.645575
+        Memory Usage: 1056760 KB
+    Processor 2:
+        Execution Time: 8.935441
+        CPU Usage: 7.414475
+        Memory Usage: 1056680 KB
+    Processor 3:
+        Execution Time: 8.935380
+        CPU Usage: 7.549989
+        Memory Usage: 1056548 KB
+    Overall Average:
+        Execution Time: 8.935400
+        CPU Usage: 7.536680
+        Memory Usage: 1056662.666667 KB
+3 Processors Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 17.752354
+        CPU Usage: 15.834130
+        Memory Usage: 2098640 KB
+    Processor 2:
+        Execution Time: 17.752365
+        CPU Usage: 15.736322
+        Memory Usage: 2098548 KB
+    Processor 3:
+        Execution Time: 17.744582
+        CPU Usage: 15.410573
+        Memory Usage: 2098500 KB
+    Overall Average:
+        Execution Time: 17.749767
+        CPU Usage: 15.660342
+        Memory Usage: 2098562.666667 KB
+4 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 6.888281
+        CPU Usage: 6.074264
+        Memory Usage: 796496 KB
+    Processor 2:
+        Execution Time: 6.888439
+        CPU Usage: 6.096486
+        Memory Usage: 796648 KB
+    Processor 3:
+        Execution Time: 6.883575
+        CPU Usage: 5.933850
+        Memory Usage: 796440 KB
+    Processor 4:
+        Execution Time: 6.888645
+        CPU Usage: 6.005576
+        Memory Usage: 796548 KB
+    Overall Average:
+        Execution Time: 6.887235
+        CPU Usage: 6.027544
+        Memory Usage: 796533.000000 KB
+4 Processors Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 13.386613
+        CPU Usage: 11.904068
+        Memory Usage: 1577708 KB
+    Processor 2:
+        Execution Time: 13.379526
+        CPU Usage: 11.858075
+        Memory Usage: 1577684 KB
+    Processor 3:
+        Execution Time: 13.395166
+        CPU Usage: 11.659990
+        Memory Usage: 1577616 KB
+    Processor 4:
+        Execution Time: 13.395218
+        CPU Usage: 11.918132
+        Memory Usage: 1577668 KB
+    Overall Average:
+        Execution Time: 13.389131
+        CPU Usage: 11.835066
+        Memory Usage: 1577669.000000 KB
+5 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 5.422316
+        CPU Usage: 4.685282
+        Memory Usage: 640124 KB
+    Processor 2:
+        Execution Time: 5.415882
+        CPU Usage: 4.631407
+        Memory Usage: 640240 KB
+    Processor 3:
+        Execution Time: 5.423093
+        CPU Usage: 4.678652
+        Memory Usage: 640184 KB
+    Processor 4:
+        Execution Time: 5.422924
+        CPU Usage: 4.796747
+        Memory Usage: 640100 KB
+    Processor 5:
+        Execution Time: 5.419815
+        CPU Usage: 4.680932
+        Memory Usage: 640236 KB
+    Overall Average:
+        Execution Time: 5.420806
+        CPU Usage: 4.694604
+        Memory Usage: 640176.800000 KB
+5 Processors Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 10.205290
+        CPU Usage: 8.899954
+        Memory Usage: 1265524 KB
+    Processor 2:
+        Execution Time: 10.207501
+        CPU Usage: 8.928443
+        Memory Usage: 1267024 KB
+    Processor 3:
+        Execution Time: 10.207530
+        CPU Usage: 8.768553
+        Memory Usage: 1267180 KB
+    Processor 4:
+        Execution Time: 10.204888
+        CPU Usage: 8.806162
+        Memory Usage: 1265036 KB
+    Processor 5:
+        Execution Time: 10.207526
+        CPU Usage: 9.017520
+        Memory Usage: 1264964 KB
+    Overall Average:
+        Execution Time: 10.206547
+        CPU Usage: 8.884126
+        Memory Usage: 1265945.600000 KB
+6 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 4.978737
+        CPU Usage: 4.397665
+        Memory Usage: 536052 KB
+    Processor 2:
+        Execution Time: 4.988798
+        CPU Usage: 4.420060
+        Memory Usage: 536196 KB
+    Processor 3:
+        Execution Time: 4.989260
+        CPU Usage: 4.545743
+        Memory Usage: 535856 KB
+    Processor 4:
+        Execution Time: 4.989194
+        CPU Usage: 4.236877
+        Memory Usage: 538276 KB
+    Processor 5:
+        Execution Time: 4.987431
+        CPU Usage: 4.430633
+        Memory Usage: 535964 KB
+    Processor 6:
+        Execution Time: 4.978981
+        CPU Usage: 4.436236
+        Memory Usage: 535960 KB
+    Overall Average:
+        Execution Time: 4.985400
+        CPU Usage: 4.411202
+        Memory Usage: 536384.000000 KB
+6 Processors Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 9.311502
+        CPU Usage: 8.087291
+        Memory Usage: 1056824 KB
+    Processor 2:
+        Execution Time: 9.318382
+        CPU Usage: 8.156935
+        Memory Usage: 1056768 KB
+    Processor 3:
+        Execution Time: 9.314590
+        CPU Usage: 8.189949
+        Memory Usage: 1056768 KB
+    Processor 4:
+        Execution Time: 9.300758
+        CPU Usage: 8.076173
+        Memory Usage: 1056748 KB
+    Processor 5:
+        Execution Time: 9.292986
+        CPU Usage: 8.158345
+        Memory Usage: 1056772 KB
+    Processor 6:
+        Execution Time: 9.318462
+        CPU Usage: 8.156560
+        Memory Usage: 1056892 KB
+    Overall Average:
+        Execution Time: 9.309447
+        CPU Usage: 8.137542
+        Memory Usage: 1056795.333333 KB
+7 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 4.543312
+        CPU Usage: 3.982377
+        Memory Usage: 461552 KB
+    Processor 2:
+        Execution Time: 4.543489
+        CPU Usage: 4.078567
+        Memory Usage: 461652 KB
+    Processor 3:
+        Execution Time: 4.543371
+        CPU Usage: 3.971026
+        Memory Usage: 461700 KB
+    Processor 4:
+        Execution Time: 4.543500
+        CPU Usage: 3.866691
+        Memory Usage: 461580 KB
+    Processor 5:
+        Execution Time: 4.542136
+        CPU Usage: 3.987277
+        Memory Usage: 461576 KB
+    Processor 6:
+        Execution Time: 4.543495
+        CPU Usage: 4.020511
+        Memory Usage: 461812 KB
+    Processor 7:
+        Execution Time: 4.543405
+        CPU Usage: 3.957786
+        Memory Usage: 461748 KB
+    Overall Average:
+        Execution Time: 4.543244
+        CPU Usage: 3.980605
+        Memory Usage: 461660.000000 KB
+7 Processors Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 8.038041
+        CPU Usage: 7.192229
+        Memory Usage: 908072 KB
+    Processor 2:
+        Execution Time: 8.038068
+        CPU Usage: 7.041453
+        Memory Usage: 908292 KB
+    Processor 3:
+        Execution Time: 8.036560
+        CPU Usage: 7.069584
+        Memory Usage: 908136 KB
+    Processor 4:
+        Execution Time: 8.035378
+        CPU Usage: 6.870487
+        Memory Usage: 908180 KB
+    Processor 5:
+        Execution Time: 8.036058
+        CPU Usage: 7.032838
+        Memory Usage: 908172 KB
+    Processor 6:
+        Execution Time: 8.036230
+        CPU Usage: 7.269227
+        Memory Usage: 908040 KB
+    Processor 7:
+        Execution Time: 8.037736
+        CPU Usage: 6.989351
+        Memory Usage: 908100 KB
+    Overall Average:
+        Execution Time: 8.036867
+        CPU Usage: 7.066453
+        Memory Usage: 908141.714286 KB
+8 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 3.957795
+        CPU Usage: 3.374875
+        Memory Usage: 405748 KB
+    Processor 2:
+        Execution Time: 3.956597
+        CPU Usage: 3.563128
+        Memory Usage: 405748 KB
+    Processor 3:
+        Execution Time: 3.950382
+        CPU Usage: 3.378482
+        Memory Usage: 405868 KB
+    Processor 4:
+        Execution Time: 3.952596
+        CPU Usage: 3.381140
+        Memory Usage: 405888 KB
+    Processor 5:
+        Execution Time: 3.957799
+        CPU Usage: 3.392108
+        Memory Usage: 405748 KB
+    Processor 6:
+        Execution Time: 3.957679
+        CPU Usage: 3.434344
+        Memory Usage: 405820 KB
+    Processor 7:
+        Execution Time: 3.947536
+        CPU Usage: 3.349968
+        Memory Usage: 405688 KB
+    Processor 8:
+        Execution Time: 3.953974
+        CPU Usage: 3.396189
+        Memory Usage: 407908 KB
+    Overall Average:
+        Execution Time: 3.954295
+        CPU Usage: 3.408779
+        Memory Usage: 406052.000000 KB
+8 Processors Ceiling 200 Million: 
+    Processor 1:
+        Execution Time: 8.101340
+        CPU Usage: 6.642203
+        Memory Usage: 798404 KB
+    Processor 2:
+        Execution Time: 8.101566
+        CPU Usage: 6.765712
+        Memory Usage: 796436 KB
+    Processor 3:
+        Execution Time: 8.101505
+        CPU Usage: 6.802577
+        Memory Usage: 798408 KB
+    Processor 4:
+        Execution Time: 8.096399
+        CPU Usage: 6.654880
+        Memory Usage: 796424 KB
+    Processor 5:
+        Execution Time: 8.102389
+        CPU Usage: 6.801366
+        Memory Usage: 796452 KB
+    Processor 6:
+        Execution Time: 8.101823
+        CPU Usage: 6.530374
+        Memory Usage: 796380 KB
+    Processor 7:
+        Execution Time: 8.100520
+        CPU Usage: 6.489965
+        Memory Usage: 796424 KB
+    Processor 8:
+        Execution Time: 8.102001
+        CPU Usage: 6.596452
+        Memory Usage: 798476 KB
+    Overall Average:
+        Execution Time: 8.100943
+        CPU Usage: 6.660441
+        Memory Usage: 797175.500000 KB
+9 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 3.384705
+        CPU Usage: 2.835795
+        Memory Usage: 362424 KB
+    Processor 2:
+        Execution Time: 3.377397
+        CPU Usage: 2.938025
+        Memory Usage: 362456 KB
+    Processor 3:
+        Execution Time: 3.379300
+        CPU Usage: 2.874391
+        Memory Usage: 362560 KB
+    Processor 4:
+        Execution Time: 3.384706
+        CPU Usage: 2.922214
+        Memory Usage: 362452 KB
+    Processor 5:
+        Execution Time: 3.384619
+        CPU Usage: 2.826827
+        Memory Usage: 362456 KB
+    Processor 6:
+        Execution Time: 3.384458
+        CPU Usage: 2.908559
+        Memory Usage: 364472 KB
+    Processor 7:
+        Execution Time: 3.381999
+        CPU Usage: 2.919195
+        Memory Usage: 362512 KB
+    Processor 8:
+        Execution Time: 3.384416
+        CPU Usage: 2.975092
+        Memory Usage: 362424 KB
+    Processor 9:
+        Execution Time: 3.384134
+        CPU Usage: 2.946885
+        Memory Usage: 362568 KB
+    Overall Average:
+        Execution Time: 3.382859
+        CPU Usage: 2.905220
+        Memory Usage: 362702.666667 KB
+9 Processors Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 6.804628
+        CPU Usage: 5.816831
+        Memory Usage: 709712 KB
+    Processor 2:
+        Execution Time: 6.811654
+        CPU Usage: 5.783766
+        Memory Usage: 709580 KB
+    Processor 3:
+        Execution Time: 6.806234
+        CPU Usage: 5.843304
+        Memory Usage: 709668 KB
+    Processor 4:
+        Execution Time: 6.814697
+        CPU Usage: 5.861350
+        Memory Usage: 709572 KB
+    Processor 5:
+        Execution Time: 6.798276
+        CPU Usage: 5.935563
+        Memory Usage: 711716 KB
+    Processor 6:
+        Execution Time: 6.809559
+        CPU Usage: 5.761883
+        Memory Usage: 709612 KB
+    Processor 7:
+        Execution Time: 6.796453
+        CPU Usage: 5.800591
+        Memory Usage: 709660 KB
+    Processor 8:
+        Execution Time: 6.804658
+        CPU Usage: 5.733906
+        Memory Usage: 709604 KB
+    Processor 9:
+        Execution Time: 6.798279
+        CPU Usage: 5.679436
+        Memory Usage: 711644 KB
+    Overall Average:
+        Execution Time: 6.804938
+        CPU Usage: 5.801848
+        Memory Usage: 710085.333333 KB
+10 Processors Ceiling 100 Million:
+    Processor 1:
+        Execution Time: 3.301706
+        CPU Usage: 2.997680
+        Memory Usage: 329664 KB
+    Processor 2:
+        Execution Time: 3.299380
+        CPU Usage: 2.804392
+        Memory Usage: 329780 KB
+    Processor 3:
+        Execution Time: 3.307870
+        CPU Usage: 2.885397
+        Memory Usage: 327664 KB
+    Processor 4:
+        Execution Time: 3.302744
+        CPU Usage: 2.804541
+        Memory Usage: 327568 KB
+    Processor 5:
+        Execution Time: 3.290117
+        CPU Usage: 2.783017
+        Memory Usage: 327656 KB
+    Processor 6:
+        Execution Time: 3.302732
+        CPU Usage: 2.882392
+        Memory Usage: 327644 KB
+    Processor 7:
+        Execution Time: 3.307845
+        CPU Usage: 2.820792
+        Memory Usage: 327604 KB
+    Processor 8:
+        Execution Time: 3.305121
+        CPU Usage: 2.846428
+        Memory Usage: 329680 KB
+    Processor 9:
+        Execution Time: 3.307998
+        CPU Usage: 2.859507
+        Memory Usage: 327728 KB
+    Processor 10:
+        Execution Time: 3.295124
+        CPU Usage: 2.775941
+        Memory Usage: 327548 KB
+    Overall Average:
+        Execution Time: 3.302064
+        CPU Usage: 2.846009
+        Memory Usage: 328253.600000 KB
+10 Processors Ceiling 200 Million:
+    Processor 1:
+        Execution Time: 13.356794
+        CPU Usage: 8.762799
+        Memory Usage: 640116 KB
+    Processor 2:
+        Execution Time: 13.357066
+        CPU Usage: 8.602630
+        Memory Usage: 639980 KB
+    Processor 3:
+        Execution Time: 13.356693
+        CPU Usage: 9.494970
+        Memory Usage: 639948 KB
+    Processor 4:
+        Execution Time: 13.356945
+        CPU Usage: 9.258457
+        Memory Usage: 640192 KB
+    Processor 5:
+        Execution Time: 13.355847
+        CPU Usage: 10.413026
+        Memory Usage: 640240 KB
+    Processor 6:
+        Execution Time: 13.356614
+        CPU Usage: 8.959655
+        Memory Usage: 640168 KB
+    Processor 7:
+        Execution Time: 13.356240
+        CPU Usage: 10.636176
+        Memory Usage: 640100 KB
+    Processor 8:
+        Execution Time: 13.356869
+        CPU Usage: 8.696367
+        Memory Usage: 640128 KB
+    Processor 9:
+        Execution Time: 13.355719
+        CPU Usage: 8.925464
+        Memory Usage: 640172 KB
+    Processor 10:
+        Execution Time: 13.357281
+        CPU Usage: 10.719742
+        Memory Usage: 642236 KB
+    Overall Average:
+        Execution Time: 13.356607
+        CPU Usage: 9.446929
+        Memory Usage: 640328.000000 KB
