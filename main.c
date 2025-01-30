@@ -1,5 +1,6 @@
 #include <stdio.h> 
 #include <mpi.h>
+#include "benchmark.c"
 //math libraries
 #include <math.h> 
 #include <gmp.h>
@@ -9,6 +10,9 @@
 int main(int argc, char **argv){
 
     MPI_Init(NULL, NULL);
+
+    // For Benchmarking
+    double start_time = MPI_Wtime();
 
     //Number of processors
     int p;
@@ -118,6 +122,16 @@ int main(int argc, char **argv){
 
     MPI_Barrier(MPI_COMM_WORLD); 
 
+    double end_time = MPI_Wtime();
+    log_benchmark_stats(rank, end_time - start_time);
+    organize_benchmark_stats(rank, p);
+
+    MPI_Barrier(MPI_COMM_WORLD); 
+
+    if (rank == 0) {
+        finalize_benchmark_stats(rank,p);
+        printf("Execution Time: %f seconds\n", end_time - start_time);
+    }
     //Proc with largest gap
     if(lgap == largest_gap){
         printf("%d: Largest Prime gap: %llu\np_1: %llu\np_2: %llu\n", rank, largest_gap, p_1, p_2); 
