@@ -1,0 +1,432 @@
+ammarogeil@AmmarBook CP431---Assignment-1 % mpirun -np 4 ./mpi_benchmark 1000000000
+1: Largest Prime gap: 282
+p_1: 436273009
+p_2: 436273291
+ammarogeil@AmmarBook CP431---Assignment-1 % cat ./output/benchmark.txt
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.059274 sec
+    Memory Usage: 13584 KB
+Processor 1:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.059470 sec
+    Memory Usage: 13584 KB
+Processor 2:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.059243 sec
+    Memory Usage: 13616 KB
+Processor 3:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.059368 sec
+    Memory Usage: 13648 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.059339 sec
+    Memory Usage: 13608.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.245929 sec
+    Memory Usage: 49248 KB
+Processor 1:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.244343 sec
+    Memory Usage: 49216 KB
+Processor 2:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.243402 sec
+    Memory Usage: 49168 KB
+Processor 3:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.243625 sec
+    Memory Usage: 49248 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.244325 sec
+    Memory Usage: 49220.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.110261 sec
+    Memory Usage: 206864 KB
+Processor 1:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.108300 sec
+    Memory Usage: 206800 KB
+Processor 2:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.108922 sec
+    Memory Usage: 206688 KB
+Processor 3:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.109051 sec
+    Memory Usage: 206784 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.109133 sec
+    Memory Usage: 206784.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.770684 sec
+    Memory Usage: 166368 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.770684 sec
+    Memory Usage: 166368.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.429661 sec
+    Memory Usage: 88480 KB
+Processor 1:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.429151 sec
+    Memory Usage: 88320 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.429406 sec
+    Memory Usage: 88400.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.247248 sec
+    Memory Usage: 49264 KB
+Processor 1:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.248131 sec
+    Memory Usage: 49264 KB
+Processor 2:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.246941 sec
+    Memory Usage: 49408 KB
+Processor 3:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.248600 sec
+    Memory Usage: 49184 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.247730 sec
+    Memory Usage: 49280.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.191679 sec
+    Memory Usage: 30544 KB
+Processor 1:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.185887 sec
+    Memory Usage: 30688 KB
+Processor 2:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.186329 sec
+    Memory Usage: 30832 KB
+Processor 3:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.193035 sec
+    Memory Usage: 30640 KB
+Processor 4:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.183933 sec
+    Memory Usage: 30960 KB
+Processor 5:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.195830 sec
+    Memory Usage: 30224 KB
+Processor 6:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.194676 sec
+    Memory Usage: 29984 KB
+Processor 7:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.185115 sec
+    Memory Usage: 30912 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.189560 sec
+    Memory Usage: 30598.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.246417 sec
+    Memory Usage: 49216 KB
+Processor 1:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.246268 sec
+    Memory Usage: 49200 KB
+Processor 2:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.248010 sec
+    Memory Usage: 49296 KB
+Processor 3:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.247789 sec
+    Memory Usage: 49216 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 0.247121 sec
+    Memory Usage: 49232.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.112832 sec
+    Memory Usage: 206752 KB
+Processor 1:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.114249 sec
+    Memory Usage: 206784 KB
+Processor 2:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.113210 sec
+    Memory Usage: 206768 KB
+Processor 3:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.114125 sec
+    Memory Usage: 206768 KB
+
+Overall Averages:
+    Execution Time: 0.000000 sec
+    CPU Usage: 1.113604 sec
+    Memory Usage: 206768.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.010097 sec
+    CPU Usage: 0.060869 sec
+    Memory Usage: 13616 KB
+Processor 1:
+    Execution Time: 0.010110 sec
+    CPU Usage: 0.060887 sec
+    Memory Usage: 13632 KB
+Processor 2:
+    Execution Time: 0.010097 sec
+    CPU Usage: 0.060885 sec
+    Memory Usage: 13536 KB
+Processor 3:
+    Execution Time: 0.010107 sec
+    CPU Usage: 0.060768 sec
+    Memory Usage: 13568 KB
+
+Overall Averages:
+    Execution Time: 0.010103 sec
+    CPU Usage: 0.060852 sec
+    Memory Usage: 13588.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.214566 sec
+    CPU Usage: 0.245607 sec
+    Memory Usage: 49328 KB
+Processor 1:
+    Execution Time: 0.214595 sec
+    CPU Usage: 0.245462 sec
+    Memory Usage: 49296 KB
+Processor 2:
+    Execution Time: 0.214574 sec
+    CPU Usage: 0.246056 sec
+    Memory Usage: 49296 KB
+Processor 3:
+    Execution Time: 0.214574 sec
+    CPU Usage: 0.245416 sec
+    Memory Usage: 49280 KB
+
+Overall Averages:
+    Execution Time: 0.214577 sec
+    CPU Usage: 0.245635 sec
+    Memory Usage: 49300.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 1.100994 sec
+    CPU Usage: 1.121375 sec
+    Memory Usage: 206800 KB
+Processor 1:
+    Execution Time: 1.100995 sec
+    CPU Usage: 1.120559 sec
+    Memory Usage: 206816 KB
+Processor 2:
+    Execution Time: 1.100994 sec
+    CPU Usage: 1.123081 sec
+    Memory Usage: 206720 KB
+Processor 3:
+    Execution Time: 1.101019 sec
+    CPU Usage: 1.121687 sec
+    Memory Usage: 206800 KB
+
+Overall Averages:
+    Execution Time: 1.101001 sec
+    CPU Usage: 1.121676 sec
+    Memory Usage: 206784.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 3.924246 sec
+    CPU Usage: 3.899811 sec
+    Memory Usage: 796576 KB
+
+Overall Averages:
+    Execution Time: 3.924246 sec
+    CPU Usage: 3.899811 sec
+    Memory Usage: 796576.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 2.064381 sec
+    CPU Usage: 2.072991 sec
+    Memory Usage: 403376 KB
+Processor 1:
+    Execution Time: 2.064438 sec
+    CPU Usage: 2.071831 sec
+    Memory Usage: 403344 KB
+
+Overall Averages:
+    Execution Time: 2.064410 sec
+    CPU Usage: 2.072411 sec
+    Memory Usage: 403360.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 1.108278 sec
+    CPU Usage: 1.129989 sec
+    Memory Usage: 206736 KB
+Processor 1:
+    Execution Time: 1.108277 sec
+    CPU Usage: 1.129460 sec
+    Memory Usage: 206816 KB
+Processor 2:
+    Execution Time: 1.108278 sec
+    CPU Usage: 1.130683 sec
+    Memory Usage: 206880 KB
+Processor 3:
+    Execution Time: 1.108269 sec
+    CPU Usage: 1.125306 sec
+    Memory Usage: 206848 KB
+
+Overall Averages:
+    Execution Time: 1.108275 sec
+    CPU Usage: 1.128859 sec
+    Memory Usage: 206820.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 0.742096 sec
+    CPU Usage: 0.778817 sec
+    Memory Usage: 109888 KB
+Processor 1:
+    Execution Time: 0.742131 sec
+    CPU Usage: 0.779479 sec
+    Memory Usage: 109728 KB
+Processor 2:
+    Execution Time: 0.742265 sec
+    CPU Usage: 0.780434 sec
+    Memory Usage: 108992 KB
+Processor 3:
+    Execution Time: 0.742200 sec
+    CPU Usage: 0.781474 sec
+    Memory Usage: 109248 KB
+Processor 4:
+    Execution Time: 0.742209 sec
+    CPU Usage: 0.771775 sec
+    Memory Usage: 109408 KB
+Processor 5:
+    Execution Time: 0.742096 sec
+    CPU Usage: 0.778061 sec
+    Memory Usage: 109168 KB
+Processor 6:
+    Execution Time: 0.742250 sec
+    CPU Usage: 0.779037 sec
+    Memory Usage: 108624 KB
+Processor 7:
+    Execution Time: 0.742211 sec
+    CPU Usage: 0.774287 sec
+    Memory Usage: 108944 KB
+
+Overall Averages:
+    Execution Time: 0.742182 sec
+    CPU Usage: 0.777921 sec
+    Memory Usage: 109250.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 1.097504 sec
+    CPU Usage: 1.137281 sec
+    Memory Usage: 206832 KB
+Processor 1:
+    Execution Time: 1.097484 sec
+    CPU Usage: 1.135721 sec
+    Memory Usage: 206720 KB
+Processor 2:
+    Execution Time: 1.097488 sec
+    CPU Usage: 1.138000 sec
+    Memory Usage: 206720 KB
+Processor 3:
+    Execution Time: 1.097517 sec
+    CPU Usage: 1.135852 sec
+    Memory Usage: 206736 KB
+
+Overall Averages:
+    Execution Time: 1.097498 sec
+    CPU Usage: 1.136713 sec
+    Memory Usage: 206752.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 11.545763 sec
+    CPU Usage: 11.406394 sec
+    Memory Usage: 1616128 KB
+Processor 1:
+    Execution Time: 11.545831 sec
+    CPU Usage: 11.398892 sec
+    Memory Usage: 1571936 KB
+Processor 2:
+    Execution Time: 11.545831 sec
+    CPU Usage: 11.406267 sec
+    Memory Usage: 1572272 KB
+Processor 3:
+    Execution Time: 11.545862 sec
+    CPU Usage: 11.405942 sec
+    Memory Usage: 1585984 KB
+
+Overall Averages:
+    Execution Time: 11.545822 sec
+    CPU Usage: 11.404374 sec
+    Memory Usage: 1586580.000000 KB
+===== Benchmark Results =====
+Processor 0:
+    Execution Time: 24.238116 sec
+    CPU Usage: 23.883729 sec
+    Memory Usage: 1788528 KB
+Processor 1:
+    Execution Time: 24.238174 sec
+    CPU Usage: 23.870744 sec
+    Memory Usage: 1710016 KB
+Processor 2:
+    Execution Time: 24.238155 sec
+    CPU Usage: 23.882368 sec
+    Memory Usage: 1720096 KB
+Processor 3:
+    Execution Time: 24.238155 sec
+    CPU Usage: 23.866677 sec
+    Memory Usage: 1697760 KB
+
+Overall Averages:
+    Execution Time: 24.238150 sec
+    CPU Usage: 23.875879 sec
+    Memory Usage: 1729100.000000 KB
+ammarogeil@AmmarBook CP431---Assignment-1 % 
+
+===== Performance Observations =====
+1. Execution time increases as the input size grows.
+   - 10 million: ~0.214 sec
+   - 50 million: ~1.101 sec
+
+2. CPU usage remains relatively constant across processors.
+
+3. Memory usage scales proportionally with input size.
+
+4. Execution time decreases as the number of processors increases.
+   - Further testing with np=1, np=2, np=4, np=8 is required to analyze speedup.
+
+5. A plot of Execution Time vs. Processors can help visualize scalability.
+
+6. Some variations in execution time may be due to MPI communication overhead.
