@@ -538,3 +538,39 @@
         Execution Time: 13.356607
         CPU Usage: 9.446929
         Memory Usage: 640328.000000 KB
+Processor 1:
+    Execution Time: 0.031153
+    CPU Usage: 0.078682
+    Memory Usage: 11157504 KB
+Processor 2:
+    Execution Time: 0.031272
+    CPU Usage: 0.078913
+    Memory Usage: 11141120 KB
+Processor 3:
+    Execution Time: 0.031152
+    CPU Usage: 0.077899
+    Memory Usage: 11108352 KB
+Processor 4:
+    Execution Time: 0.031222
+    CPU Usage: 0.082695
+    Memory Usage: 10256384 KB
+Processor 5:
+    Execution Time: 0.031229
+    CPU Usage: 0.078856
+    Memory Usage: 11010048 KB
+Processor 6:
+    Execution Time: 0.031276
+    CPU Usage: 0.078035
+    Memory Usage: 10960896 KB
+Processor 7:
+    Execution Time: 0.031277
+    CPU Usage: 0.081102
+    Memory Usage: 10256384 KB
+Processor 8:
+    Execution Time: 0.031142
+    CPU Usage: 0.077698
+    Memory Usage: 10665984 KB
+Overall Average:
+    Execution Time: 0.031215
+    CPU Usage: 0.079235
+    Memory Usage: 10819584.000000 KB

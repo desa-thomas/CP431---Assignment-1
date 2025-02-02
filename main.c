@@ -1,18 +1,21 @@
 #include <stdio.h> 
 #include <mpi.h>
-#include "benchmark.c"
+#include "benchmark.h"
 //math libraries
 #include <math.h> 
 #include <gmp.h>
 
 #include <stdlib.h>
 
+
+
 int main(int argc, char **argv){
 
     MPI_Init(NULL, NULL);
+    double start_time, end_time;
+    start_time = MPI_Wtime();
 
-    // For Benchmarking
-    double start_time = MPI_Wtime();
+   
 
     //Number of processors
     int p;
@@ -21,6 +24,9 @@ int main(int argc, char **argv){
     //processcor rank
     int rank;
     MPI_Comm_rank(MPI_COMM_WORLD, &rank); 
+
+    
+    
 
     //If a command line argument isn't given for the celiling prime value exit the program
     if (argc < 2){
@@ -122,10 +128,15 @@ int main(int argc, char **argv){
 
     MPI_Barrier(MPI_COMM_WORLD); 
 
-    double end_time = MPI_Wtime();
+  
+
+
+    
+
+    end_time = MPI_Wtime();
+
     log_benchmark_stats(rank, end_time - start_time);
     organize_benchmark_stats(rank, p);
-
     MPI_Barrier(MPI_COMM_WORLD); 
 
     if (rank == 0) {
@@ -136,6 +147,7 @@ int main(int argc, char **argv){
     if(lgap == largest_gap){
         printf("%d: Largest Prime gap: %llu\np_1: %llu\np_2: %llu\n", rank, largest_gap, p_1, p_2); 
     }
+
 
     MPI_Finalize(); 
 }

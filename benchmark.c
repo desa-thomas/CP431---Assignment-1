@@ -1,24 +1,22 @@
-#include <math.h> 
-#include <gmp.h>
-#include <stdio.h> 
-#include <mpi.h> 
+#include <stdio.h>
 #include <stdlib.h>
+#include <mpi.h>
 #include <sys/resource.h>
-#define MAX_PROCESSORS 100 
-
-typedef struct {
-    double execution_time;
-    double cpu_usage;
-    long memory_usage;
-} ProcessorStats;
+#include <sys/time.h>
+#include "benchmark.h"
 
 ProcessorStats stats[MAX_PROCESSORS];
 
 void log_benchmark_stats(int rank, double execution_time) {
     struct rusage usage;
     getrusage(RUSAGE_SELF, &usage);
+
     double cpu_usage = (double)usage.ru_utime.tv_sec + (double)usage.ru_utime.tv_usec / 1000000.0;
     long memory_usage = usage.ru_maxrss;
+
+    #ifdef __APPLE__
+        memory_usage /= 1024;  // Convert bytes to KB on macOS
+    #endif
 
     stats[rank].execution_time = execution_time;
     stats[rank].cpu_usage = cpu_usage;
@@ -26,16 +24,24 @@ void log_benchmark_stats(int rank, double execution_time) {
 }
 
 void organize_benchmark_stats(int rank, int p) {
-    MPI_Gather(&stats[rank], sizeof(ProcessorStats), MPI_BYTE, 
-               stats, sizeof(ProcessorStats), MPI_BYTE, 
+    ProcessorStats local_stats = stats[rank];
+    ProcessorStats *all_stats = (rank == 0) ? malloc(p * sizeof(ProcessorStats)) : NULL;
+
+    MPI_Gather(&local_stats, sizeof(ProcessorStats), MPI_BYTE,
+               all_stats, sizeof(ProcessorStats), MPI_BYTE,
                0, MPI_COMM_WORLD);
+
+    if (rank == 0) {
+        for (int i = 0; i < p; i++) {
+            stats[i] = all_stats[i];
+        }
+        free(all_stats);
+    }
 }
 
 void finalize_benchmark_stats(int rank, int p) {
     if (rank == 0) {
-        double avg_execution_time = 0;
-        double avg_cpu_usage = 0;
-        double avg_memory_usage = 0;
+        double avg_execution_time = 0, avg_cpu_usage = 0, avg_memory_usage = 0;
 
         for (int i = 0; i < p; i++) {
             avg_execution_time += stats[i].execution_time;
@@ -46,22 +52,25 @@ void finalize_benchmark_stats(int rank, int p) {
         avg_cpu_usage /= p;
         avg_memory_usage /= p;
 
-        FILE *file = fopen("./benchmark.txt", "a");
+        // Ensure output directory exists
+        system("mkdir -p output");
+
+        FILE *file = fopen("./output/benchmark.txt", "a");
         if (file == NULL) {
             perror("Unable to open benchmark.txt");
             return;
         }
 
+        fprintf(file, "===== Benchmark Results =====\n");
         for (int i = 0; i < p; i++) {
-            fprintf(file, "Processor %d:\n", i + 1);
-            fprintf(file, "    Execution Time: %f\n", stats[i].execution_time);
-            fprintf(file, "    CPU Usage: %f\n", stats[i].cpu_usage);
+            fprintf(file, "Processor %d:\n", i);
+            fprintf(file, "    Execution Time: %f sec\n", stats[i].execution_time);
+            fprintf(file, "    CPU Usage: %f sec\n", stats[i].cpu_usage);
             fprintf(file, "    Memory Usage: %ld KB\n", stats[i].memory_usage);
         }
-
-        fprintf(file, "Overall Average:\n");
-        fprintf(file, "    Execution Time: %f\n", avg_execution_time);
-        fprintf(file, "    CPU Usage: %f\n", avg_cpu_usage);
+        fprintf(file, "\nOverall Averages:\n");
+        fprintf(file, "    Execution Time: %f sec\n", avg_execution_time);
+        fprintf(file, "    CPU Usage: %f sec\n", avg_cpu_usage);
         fprintf(file, "    Memory Usage: %f KB\n", avg_memory_usage);
 
         fclose(file);
